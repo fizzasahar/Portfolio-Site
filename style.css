@@ -1,0 +1,291 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Updated Theme */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.highlight {
+    color: #ff4081;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+
+header {
+    background: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+
+/* About Section */
+#about {
+    padding: 4rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 0px 125px 0px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 250px;
+    margin-right: 5rem;
+    border: #fecfef solid 10px;
+}
+
+.profile-pic:hover {
+    transform: scale(1.2);
+    border: #ff4081 solid 10px;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+#about h2 {
+    padding-top: 100px;
+    font-size: 2.9rem;
+    margin-bottom: 2rem;
+    color: #ff4081;
+}
+
+/* Skills Section */
+#skills {
+    padding: 4rem 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+}
+
+.skill {
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    margin: 20px;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #ff4081;
+    margin-bottom: 0.5rem;
+}
+
+.skill-icon:hover {
+    transform: scale(1.3);
+    color: black;
+
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 10px;
+    background-color: #ff4081;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-card {
+    width: 300px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    color: #ff4081;
+}
+
+.project-info p {
+    color: #555;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 4rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 2px solid #ff65a3;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+
+}
